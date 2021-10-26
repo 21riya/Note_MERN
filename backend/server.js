@@ -1,11 +1,14 @@
+const dotenv = require("dotenv");
 const express = require("express");
 const notes = require("./data/notes");
-const dotenv = require("dotenv");
+const connectDb = require("./config/db");
 
-const app = express();
 dotenv.config();
+const app = express();
 
 const Port = process.env.PORT || 5000;
+
+connectDb();
 
 app.get("/", (req, res) => {
   res.send("API is Running");

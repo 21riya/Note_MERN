@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.mainscreen {
+    min-height: 93vh;
+    padding: 20px 0;
+    display: flex;
+}
+
+.page {
+    width: 100%;
+}
+
+.heading {
+    font-size: 50px;
+    font-family: "Open Sans";
+}
+
+@media only screen and (max-width: 600px) {
+    .heading {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    }
+}
