@@ -1,0 +1,9 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.py-3 {
+  margin-top: 10px;
+}
